@@ -23,7 +23,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="25.77"/>
                 <RowDefinition Height="83.122"/>
-                <RowDefinition/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="24.5"/>
             </Grid.RowDefinitions>
             <!--上标题栏-->
@@ -103,106 +103,55 @@
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_Examine.png"/>
                     </TabItem.Background>
-                    <Grid Margin="0" Background="{DynamicResource MyBrush}">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.052*"/>
-                            <ColumnDefinition Width="0.9*"/>
-                            <ColumnDefinition Width="0.048*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="40.73"/>
-                            <RowDefinition Height="56.667"/>
-                            <RowDefinition Height="338.833"/>
-                            <RowDefinition Height="26.9999999999997"/>
-                        </Grid.RowDefinitions>
-
-                        <!--详细-->
-                        <Label Content="电脑体检" HorizontalAlignment="Left" Margin="0" Width="94.25" Height="36" FontSize="14.667" FontWeight="Bold" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" />
-                        <pageTransitions:PageTransition Name="pTransitionControl_1" Margin="0" TransitionType="SlideAndFade" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-
-                    </Grid>
                 </TabItem>
                 <TabItem Header="查杀木马" Height="83" Margin="80,0,0,0" Width="74" Style="{DynamicResource TabItemStyle}">
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_dsmain.png"/>
                     </TabItem.Background>
-                    <Grid Margin="0" Background="{DynamicResource MyBrush}">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.052*"/>
-                            <ColumnDefinition Width="0.9*"/>
-                            <ColumnDefinition Width="0.048*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="40.73"/>
-                            <RowDefinition Height="56.667"/>
-                            <RowDefinition Height="338.833"/>
-                            <RowDefinition Height="26.9999999999997"/>
-                        </Grid.RowDefinitions>
-                        <!--详细-->
-                        <Label Content="查杀木马" HorizontalAlignment="Left" Margin="0" Width="94.25" Height="36" FontSize="14.667" FontWeight="Bold" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" />
-                        <pageTransitions:PageTransition Name="pTransitionControl_2" Margin="0" TransitionType="SlideAndFade" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-
-                    </Grid>
                 </TabItem>
                 <TabItem Header="清理插件" Height="83" Margin="155,0,0,0" Width="74" Style="{DynamicResource TabItemStyle}">
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_PluginCleaner.png"/>
                     </TabItem.Background>
-                    <Grid Margin="0" Background="{DynamicResource MyBrush}">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.052*"/>
-                            <ColumnDefinition Width="0.9*"/>
-                            <ColumnDefinition Width="0.048*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="40.73"/>
-                            <RowDefinition Height="56.667"/>
-                            <RowDefinition Height="338.833"/>
-                            <RowDefinition Height="26.9999999999997"/>
-                        </Grid.RowDefinitions>
-                        <!--详细-->
-                        <Label Content="清理插件" HorizontalAlignment="Left" Margin="0" Width="94.25" Height="36" FontSize="14.667" FontWeight="Bold" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" />
-                        <pageTransitions:PageTransition Name="pTransitionControl_3" Margin="0" TransitionType="SlideAndFade" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-
-                    </Grid>
                 </TabItem>
                 <TabItem Header="修复漏洞" Height="83" Margin="230,0,0,0" Width="74" Style="{DynamicResource TabItemStyle}">
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_VulRepair.png"/>
                     </TabItem.Background>
-                    <Grid Background="{DynamicResource MyBrush}"/>
                 </TabItem>
                 <TabItem Header="清理垃圾" Height="83" Margin="305,0,0,0" Width="74" Style="{DynamicResource TabItemStyle}">
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_RubbishCleaner.png"/>
                     </TabItem.Background>
-                    <Grid Background="{DynamicResource MyBrush}"/>
                 </TabItem>
                 <TabItem Header="清理痕迹" Height="83" Margin="380,0,0,0" Width="74" Style="{DynamicResource TabItemStyle}">
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_TraceCleaner.png"/>
                     </TabItem.Background>
-                    <Grid Background="{DynamicResource MyBrush}"/>
                 </TabItem>
                 <TabItem Header="系统修复" Height="83" Margin="455,0,0,0" Width="74" Style="{DynamicResource TabItemStyle}">
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_SysRepair.png"/>
                     </TabItem.Background>
-                    <Grid Background="{DynamicResource MyBrush}"/>
                 </TabItem>
                 <TabItem Header="功能大全" Height="83" Margin="530,0,0,0" Width="74" Style="{DynamicResource TabItemStyle}">
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_AdvTools.png"/>
                     </TabItem.Background>
-                    <Grid Background="{DynamicResource MyBrush}"/>
                 </TabItem>
                 <TabItem Header="软件管家" Height="83" Margin="605,0,0,0" Width="74" Style="{DynamicResource TabItemStyle}">
                     <TabItem.Background>
                         <ImageBrush ImageSource="styles/skin/ico/ico_softmgr.png"/>
                     </TabItem.Background>
-                    <Grid Background="{DynamicResource MyBrush}"/>
                 </TabItem>
             </TabControl>
+
+          
+            <pageTransitions:PageTransition 
+              Name="pTransitionControl_1" 
+              Margin="0" 
+              TransitionType="SlideAndFade" 
+              Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
            
             <!--导航详细-->
             <!--下状态栏-->

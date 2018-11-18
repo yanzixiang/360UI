@@ -90,12 +90,12 @@ namespace _360UI
       else if (index == 1)
       {
         pages.scan newPage = new pages.scan();
-        this.pTransitionControl_2.ShowPage(newPage);
+        this.pTransitionControl_1.ShowPage(newPage);
       }
       else if (index == 2)
       {
         pages.scan newPage = new pages.scan();
-        this.pTransitionControl_3.ShowPage(newPage);
+        this.pTransitionControl_1.ShowPage(newPage);
       }
       else
       {
