@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3667589-D9B1-489E-AB4F-D1EC06A40A9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_360UI</RootNamespace>
+    <AssemblyName>360UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20621.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>360.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfPageTransitions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\WpfPageTransitions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Like360Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Like360Main.xaml.cs">
+      <DependentUpon>Like360Main.xaml</DependentUpon>
+    </Compile>
+    <Page Include="pages\index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\scan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\ButtonResource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="styles\MenuItemStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="styles\SysButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="styles\TabControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="pages\index.xaml.cs">
+      <DependentUpon>index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\scan.xaml.cs">
+      <DependentUpon>scan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="360.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\Button\btbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\Button\btfg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\Button\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\Button\MAX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\Button\MNI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\Button\x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\360AntiVirus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\360Chrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\360Compress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\360Desktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\360EntAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\360FirstAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\360JiShi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\360se.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_360Guard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_360MobileMgr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_360NetRepair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_360passwordcheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_360PowerSaver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_360QSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_360UDiskCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_360Ys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_pic_360cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AavanceTools_pic_shoujitijian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AdvanceTool_pic_360LuDaShi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\csbt\AdvanceTools_NetSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\frame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\360DiagnoseScan_413.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_AdvTools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_diannaomenzhen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_dsmain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_Examine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_PluginCleaner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_RubbishCleaner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_softmgr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_SpeedupOpt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_SysRepair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_TraceCleaner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\ico_VulRepair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\toolbar_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\ico\toolbar_pushed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="styles\skin\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

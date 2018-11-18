@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="_360UI.pages.index"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             FontFamily="SimSun"
+             TextOptions.TextFormattingMode="Display" 
+             Background="Transparent"
+             d:DesignHeight="400" d:DesignWidth="500">
+    <Grid>
+        <UniformGrid Margin="1" Grid.Row="2" Rows="3" Columns="6" Grid.Column="1" >
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78" TextOptions.TextFormattingMode="Display">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/360AntiVirus.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/ico/ico_diannaomenzhen.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AavanceTools_360Guard.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AavanceTools_360MobileMgr.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AavanceTools_360NetRepair.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AavanceTools_360passwordcheck.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AavanceTools_360UDiskCheck.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AavanceTools_360Ys.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AavanceTools_pic_360cloud.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AavanceTools_pic_shoujitijian.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/AdvanceTool_pic_360LuDaShi.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/ico/ico_SpeedupOpt.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/360Chrome.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/360Desktop.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/360EntAdmin.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/360FirstAD.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/360JiShi.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="测试按钮" HorizontalAlignment="Left" Height="82" Style="{DynamicResource Buttonlist}" VerticalAlignment="Top" Width="78">
+                <Button.Background>
+                    <ImageBrush ImageSource="../styles/skin/csbt/360se.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+        </UniformGrid>
+ 
+    </Grid>
+</UserControl>
